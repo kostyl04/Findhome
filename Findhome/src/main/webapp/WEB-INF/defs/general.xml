@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	
+	<!--  Template for Login and Register Page	 -->
+	
+	<definition name="maintemplate" template="/WEB-INF/layouts/maintemplate.jsp">
+		<put-attribute name="nav-top" value="/WEB-INF/layouts/imports/nav-top.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layouts/imports/footer.jsp" />
+	</definition>
+
+	
+	<!-- 	Mapping for main contents -->
+	<definition name="main" extends="maintemplate">
+		<put-attribute name="title" value="Найди себе дом!" />
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+	</definition>
+	<definition name="register" extends="maintemplate">
+		<put-attribute name="title" value="Найди себе дом!" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+	</definition>
+	<definition name="registrationConfirm" extends="maintemplate">
+		<put-attribute name="title" value="Регистрация" />
+		<put-attribute name="body" value="/WEB-INF/jsp/registrationConfirm.jsp" />
+	</definition>
+	<definition name="login" extends="maintemplate">
+		<put-attribute name="title" value="Вход на сайт FindHome.by" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login2.jsp" />
+	</definition>
+	<definition name="profile" extends="maintemplate">
+		<put-attribute name="title" value="Мой профиль" />
+		<put-attribute name="body" value="/WEB-INF/jsp/profile.jsp" />
+	</definition>
+	<definition name="flat" extends="maintemplate">
+		<put-attribute name="title" value="Добавить квартиру" />
+		<put-attribute name="body" value="/WEB-INF/jsp/flat.jsp" />
+	</definition>
+	
+
+	
+	
+	
+	
+	
+		
+
+	
+	
+
+
+</tiles-definitions>

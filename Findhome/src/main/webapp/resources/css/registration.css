@@ -1,0 +1,11 @@
+.registration{
+	max-width: 260px;
+	margin:auto;
+	border:1px solid #eee;
+}
+.registration form{
+	padding:10px;
+}
+.err{
+	border:1px solid #a94442;
+}
